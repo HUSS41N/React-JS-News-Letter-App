@@ -1,6 +1,7 @@
 import React from "react"
 import SearchBar from "./SearchBar"
 import News from "../api/News"
+import NewsList from "./NewsList"
 class App extends React.Component{
     state = { news:[] }
     componentDidMount(){
@@ -15,6 +16,7 @@ class App extends React.Component{
     render(){
         return (<div>
             <SearchBar onSearchSubmit={this.onSearchSubmit}/>
+            <NewsList news={this.state.news}/>
             </div>
             )
     }

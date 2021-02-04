@@ -17,7 +17,7 @@ class SearchBar extends React.Component {
             <div>
                 <form onSubmit={this.onFormSubmit}>
                     <div className="form-class">
-                        <label>NEWS LETTER</label>
+                        <label>NEWS 20-20</label>
                         <input
                             type="text"
                             placeholder="Search News"
